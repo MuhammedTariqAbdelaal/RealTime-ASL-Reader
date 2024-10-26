@@ -21,3 +21,7 @@ The application detects hand gestures and converts them into text using a traine
     - Uses a webcam feed to detect hand gestures.
     - Predicts the corresponding ASL letter and displays the recognized text.
   
+# Running the app
+    ```streamlit run sign_language_streamlit.py```
+- Start the webcam from the Streamlit app.
+- Perform hand gestures in front of the camera to see the detected letters.
