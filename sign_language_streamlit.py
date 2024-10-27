@@ -121,6 +121,6 @@ if run and not stop:
 st.markdown("""
     <div style="position: fixed; bottom: 0; width: 100%; text-align: center;">
     <hr>
-    <p style="color: grey;">Developed by Ali Ashraf | Sign Language Recognition</p>
+    <p style="color: grey;">Developed by Ali-ElDin Ashraf and Muhammed Aboseif | Sign Language Recognition.................................................</p>
     </div>
     """, unsafe_allow_html=True)
