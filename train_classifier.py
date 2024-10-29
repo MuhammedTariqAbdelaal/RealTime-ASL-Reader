@@ -51,7 +51,7 @@ cv_scores = cross_val_score(best_model, x_train, y_train, cv=5, scoring='accurac
 print(f'Average cross-validation accuracy: {np.mean(cv_scores) * 100:.2f}%')
 
 # Save the trained model
-with open('model.h5', 'wb') as f:
+with open('model.p', 'wb') as f:
     pickle.dump({'model': best_model}, f)
 
 print("Model training and saving completed successfully.")
