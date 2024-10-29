@@ -29,6 +29,7 @@ The application detects hand gestures and converts them into text using a traine
 
 # Data used
    - Data used in this project are found in "data" folder.
+       - Data source https://www.kaggle.com/datasets/debashishsau/aslamerican-sign-language-aplhabet-dataset/data 
    - Each categorey has its own folder in "data" folder.
    - The categories correspondants are as follows:
        - 0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J',
