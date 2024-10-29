@@ -38,7 +38,7 @@ st.title('Sign Language Recognition')  # Title of the web app
 
 # Sidebar configuration for controlling webcam behavior
 st.sidebar.header("Control Panel")
-run = st.sidebar.toggle('Run the Webcam')  # Checkbox to start/stop the webcam feed
+run = st.sidebar.toggle('Run the Webcam')  # toggle to start/stop the webcam feed
 
 # Show usage instructions when the webcam is not running
 if not run:
@@ -49,14 +49,14 @@ if not run:
         - Click 'Stop Webcam' when you're done.
     """)
 
-# If the webcam is running and has not been stopped
+# If the webcam is running
 if run:
     cap = cv2.VideoCapture(0)  # Start video capture from the default webcam (ID 0)
     stframe = st.empty()  # Placeholder for displaying webcam feed in Streamlit
     text_placeholder = st.empty()  # Placeholder for displaying recognized text
     progress_bar = st.progress(0)  # Progress bar for tracking prediction updates
 
-    # Continuously read frames from the webcam until 'stop' is triggered
+    # Continuously read frames from the webcam until the toggle is switched off
     while run:
         ret, frame = cap.read()  # Read a frame from the webcam
         if not ret:
